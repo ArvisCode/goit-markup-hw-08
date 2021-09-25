@@ -1,0 +1,48 @@
+.social {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+  align-items: center;
+
+  .social__item {
+    width: 44px;
+    height: 44px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .social__link {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      outline: none;
+    }
+    &:hover .social__icon,
+    &:focus .social__icon {
+      fill: #ffffff;
+    }
+  }
+
+  .social__icon {
+    fill: #afb1b8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
