@@ -1,0 +1,122 @@
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: var(--bcg-color-white);
+
+  transform: translateX(101%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.close-menu__icon {
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-toggle:hover .close-menu__icon,
+.menu-toggle:focus .close-menu__icon {
+  fill: var(--accent-color);
+}
+
+.close-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.mobile-list__item:not(:last-child),
+.mobile-contacts__item:not(:last-child) {
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-list__link {
+  color: var(--second-title-color);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 480px) {
+    font-size: 40px;
+  }
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-list__link--current {
+  color: var(--accent-color);
+}
+
+.mobile-contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-contacts__link {
+  color: var(--main-text-color);
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-socials {
+  display: flex;
+}
+
+.mobile-socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.mobile-socials__link {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  color: var(--accent-color);
+}
+
+.mobile-socials__link--after {
+  &::after {
+    content: "";
+    width: 0;
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+  }
+}

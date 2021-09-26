@@ -5,6 +5,10 @@
   }
 }
 
+.work__list {
+  display: flex;
+}
+
 .work__item {
   position: relative;
   &:not(:first-child) {
