@@ -1,5 +1,5 @@
 .container {
-  max-width: calc(100% - 30px);
+  flex-basis: calc(100% - 30px);
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
