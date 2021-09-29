@@ -19,6 +19,11 @@
   <header class="header">
     <div class="container container--header">
       <a class="logo" lang="en" href="./index.html">Web<span class="logo__span">Studio</span></a>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile menu" type="button">
+        <svg width="40" height="40">
+          <use class="icon-menu" href="./images/sprite.svg#icon-open_menu_mob"></use>
+        </svg>
+      </button>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -316,6 +321,55 @@
       </div>
     </div>
   </footer>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu close-menu">
+      <svg width="40" height="40">
+        <use class="close-menu__icon" href="./images/sprite.svg#icon-close_menu_mob"></use>
+      </svg>
+    </button>
+    <ul class="mobile-list">
+      <li class="mobile-list__item">
+        <a href="./index.html" class="mobile-list__link mobile-list__link--current">Студия</a>
+      </li>
+      <li class="mobile-list__item">
+        <a href="./portfolio.html" class="mobile-list__link">Портфолио</a>
+      </li>
+      <li class="mobile-list__item">
+        <a href="" class="mobile-list__link">Контакты</a>
+      </li>
+    </ul>
+    <div class="mobile-wrap">
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link" href="tell:+380961111111">
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item"><a class="mobile-socials__link mobile-socials__link--after"
+            href="">Instagram</a>
+        </li>
+        <li class="mobile-socials__item"><a class="mobile-socials__link mobile-socials__link--after" href="">Twitter</a>
+        </li>
+        <li class="mobile-socials__item"><a class="mobile-socials__link mobile-socials__link--after"
+            href="">Facebook</a>
+        </li>
+        <li class="mobile-socials__item"><a class="mobile-socials__link" href="">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
   <script src="./js/mobile-menu.js"></script>
 </body>
 
