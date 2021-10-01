@@ -1,6 +1,7 @@
 .header {
   margin: 0 auto;
   border-bottom: 1px solid #ececec;
+  box-sizing: border-box;
 }
 
 .container--header {
@@ -35,10 +36,14 @@
 }
 
 .nav {
-  margin-left: 93px;
+  margin-left: 88px;
 
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 
   .nav__list {
@@ -50,6 +55,7 @@
   }
 
   .nav__link {
+    display: block;
     padding: 32px 0;
 
     font-weight: 500;
@@ -93,8 +99,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
+    margin-left: 84px;
     .contact__item {
-      margin-left: 84px;
       &:not(:last-child) {
         margin-bottom: 10px;
       }
@@ -102,6 +108,7 @@
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
+    margin-left: 240px;
     .contact__item {
       &:not(:last-child) {
         margin-right: 30px;
@@ -117,7 +124,7 @@
       padding: 24px 0;
     }
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--contact-link-color);
@@ -128,6 +135,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
 
     &:hover,
     &:focus {

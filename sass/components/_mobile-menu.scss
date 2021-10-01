@@ -5,13 +5,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
   background-color: #ffffff;
 
   transform: translateX(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
@@ -23,6 +27,14 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-toggle__svg--open {
+  padding: 12px 8px;
+}
+
+.menu-toggle__svg--close {
+  padding: 10px;
+}
+
 .menu-toggle:hover .close-menu__icon,
 .menu-toggle:focus .close-menu__icon {
   fill: var(--accent-color);
@@ -30,8 +42,8 @@
 
 .close-menu {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 30px;
+  right: 35px;
 }
 
 .mobile-list__item:not(:last-child),

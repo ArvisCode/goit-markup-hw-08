@@ -10,6 +10,7 @@
 }
 
 .work__item {
+  flex-basis: calc((100% - 60px) / 2);
   position: relative;
   &:not(:first-child) {
     margin-left: 30px;
