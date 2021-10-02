@@ -8,10 +8,16 @@
 .container--footer {
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
+  }
+}
+
+.footer__case {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -27,12 +33,10 @@
 }
 
 .address__list {
-  margin: 20px auto 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 20px;
+  text-align: center;
   @media screen and (min-width: 1200px) {
-    align-items: start;
+    text-align: start;
   }
 }
 
@@ -62,12 +66,10 @@
 .social--footer {
   display: flex;
   flex-direction: column;
-  margin: 0 auto 60px auto;
-  @media screen and (min-width: 768px) {
-    margin: 0 90px 60px auto;
-  }
+  margin-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
-    margin: 0 0 0 70px;
+    margin-left: 70px;
   }
 }
 
