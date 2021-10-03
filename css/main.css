@@ -475,8 +475,6 @@ ul {
 }
 
 .hero {
-  max-width: 480px;
-  min-height: 400px;
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0;
@@ -574,7 +572,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .advantages__item {
     flex-basis: calc(100% / 4 - 30px);
-    margin-bottom: 0;
   }
 }
 
@@ -880,14 +877,17 @@ ul {
 }
 
 @media screen and (min-width: 400px) {
+  .filter .filter__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
   .filter .filter__item:first-child {
     margin-bottom: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .filter .filter__item {
-    margin-bottom: 0;
+  .filter .filter__item:first-child {
+    margin-bottom: 0px;
   }
 }
 

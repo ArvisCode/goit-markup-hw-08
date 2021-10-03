@@ -16,13 +16,18 @@
     }
 
     @media screen and (min-width: 400px) {
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
       &:first-child {
         margin-bottom: 15px;
       }
     }
 
     @media screen and (min-width: 768px) {
-      margin-bottom: 0;
+      &:first-child {
+        margin-bottom: 0px;
+      }
     }
   }
 }
